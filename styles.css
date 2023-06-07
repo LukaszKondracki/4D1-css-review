@@ -1,0 +1,41 @@
+div {
+    padding: 20px;
+}
+
+#one { /* selektor ID */
+    background-color: red;
+}
+
+.two { /* selektor klasy */
+    background-color: green;
+}
+
+[title="three"] { /* selektor atrybutu */
+    background-color: blue;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.four > div { /* bezpośredni potomek */
+    border: 3px solid orange;
+}
+
+.four div { /* dowolny potomek */
+    outline: 3px solid cornflowerblue;
+}
+
+.two, .four {
+    font-size: 150%;
+}
+
+.two ~ div { /* selektor sąsiada */
+    transform: rotateZ(5deg);
+}
+
+.two + div { /* selektor bezpośredniego sąsiada */
+    box-shadow: 10px 10px 10px black;
+}
